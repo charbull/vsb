@@ -50,7 +50,10 @@
 
         if ($window.location.protocol !== parser.protocol) {
 
-            $http.get(globalConfig.baseURL + '?query=select+%3Fs+where+%7B%5B%5D+a+%3Fs%7D+LIMIT+1')
+            $http.get(globalConfig.baseURL + '?query=select+%3Fs+where+%7B%5B%5D+a+%3Fs%7D+LIMIT+1' ,{
+                headers: {
+                    'Authorization': 'Basic YWRtaW46YWRtaW4='
+                }})
                 .success(function () {
                     hideMessage = true;
                 });

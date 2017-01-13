@@ -57,7 +57,7 @@ var options = gulpStack.options(gulp, $, [
     ],
     {
         files: {
-            js: ['app/**/*.js', '!app/overwrite.js'],
+            js: ['app/**/*.js'],
             watch: '!app/styles/styles.css',
             vendor: [],
             test: ['app/**/*.spec.js'],

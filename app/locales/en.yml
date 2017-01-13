@@ -15,7 +15,6 @@ en:
     RESET_WORKSPACE: Reset Workspace
 
 # Result-Page
-    RESULTS: Results
     QUERY_EXECUTOR: Query Executor
     FORMAT: Format
     LIMIT: Limit
@@ -135,4 +134,3 @@ en:
         To Search a Relation between {{alias}} and another subject,
         please click on the
         <i class='fa fa-plug fa-fw'></i> plug button of this subject.
-

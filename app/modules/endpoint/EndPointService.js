@@ -23,7 +23,10 @@
 
             options.timeout = cancelPendingRequest.promise;
             options.params = options.data;
-            options.headers = {'Accept': 'application/sparql-results+json'};
+            options.headers = {
+              'Accept': 'application/sparql-results+json',
+              'Authorization': 'Basic YWRtaW46YWRtaW4='
+            };
             delete (options.data);
 
             $http(options).success(httpRequest.resolve).error(httpRequest.reject);
